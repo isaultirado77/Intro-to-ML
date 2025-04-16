@@ -2,7 +2,7 @@
 
 import unittest
 from unittest.mock import patch
-import numpy as np
+from random import randint
 
 from tmc import points
 
@@ -47,7 +47,7 @@ class SolveQuadratic(unittest.TestCase):
     def test_random(self):
         b=0; a=c=1
         while b**2 - 4*a*c <= 0:  # while the solutions are complex, get new random coefficients
-            r=np.random.rand(3)*10
+            r=[randint(0, 10) for _ in range(3)]
             a, b, c = r
         sol = solve_quadratic(a,b,c)
         self.assertIsInstance(sol, tuple, f"solve_quadratic should return a tuple. Got {type(sol)}")
