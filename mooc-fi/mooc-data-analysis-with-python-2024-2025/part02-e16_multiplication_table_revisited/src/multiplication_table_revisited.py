@@ -3,7 +3,10 @@
 import numpy as np
 
 def multiplication_table(n):
-    return np.array([])
+    a = np.arange(n)
+    col = a.reshape(-1, 1)
+    row = a.reshape(1, -1)
+    return col @ row
 
 def main():
     print(multiplication_table(4))
