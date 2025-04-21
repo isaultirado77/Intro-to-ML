@@ -1,0 +1,8 @@
+- [ ] Gradient Descent 
+    - [X] Theory
+    - [ ] Implement: 
+        - [X] BGD
+        - [X] SGD
+        - [X] MGD
+    - [ ] Experiments
+    - [X] Results
