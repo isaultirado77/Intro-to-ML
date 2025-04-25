@@ -1,9 +1,18 @@
 #!/usr/bin/python3
 
 import numpy as np
+from numpy.linalg.linalg import LinAlgError
 
 def almost_meeting_lines(a1, b1, a2, b2):
-    return []
+    A = np.array([ [-a1, 1],[-a2, 1] ])
+    b = np.array([b1, b2])
+    try: 
+        x = np.linalg.solve(A, b)
+        return (x, True)
+    except LinAlgError:
+        x = np.linalg.lstsq(A, b)[0]
+        return (x, False)
+
 
 def main():
     a1=1
