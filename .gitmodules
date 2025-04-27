@@ -1,3 +1,6 @@
 [submodule "linear-regression"]
 	path = linear-regression
 	url = https://github.com/isaultirado77/linear-regression
+[submodule "learning_scikit-learn"]
+	path = learning_scikit-learn
+	url = https://github.com/isaultirado77/ml_scikit-learn
