@@ -4,3 +4,6 @@
 [submodule "learning_scikit-learn"]
 	path = learning_scikit-learn
 	url = https://github.com/isaultirado77/ml_scikit-learn
+[submodule "dim-reduction-pca"]
+	path = dim-reduction-pca
+	url = https://github.com/isaultirado77/dim-reduction-pca
